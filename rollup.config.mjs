@@ -23,15 +23,18 @@ const config = defineConfig([
   {
     input: "src/index.ts",
     output: [
+      // Nodejs
       {
-        // Browser / Nodejs - UMD
         file: pkg.main,
-        format: "umd",
+        format: "cjs",
         sourcemap: true,
-        name: "axiosApiRequest",
-        globals: {
-          axios: "axios"
-        }
+        exports: "default"
+      },
+      // ES6
+      {
+        file: pkg.module,
+        format: "es",
+        sourcemap: true
       }
     ],
     external: ["axios"],
@@ -46,8 +49,8 @@ const config = defineConfig([
     ]
   },
   {
-    input: `${outputDir}/types/index.d.ts`,
-    output: [{ file: pkg.types, format: "es" }],
+    input: `${outputDir}/es/index.d.ts`,
+    output: { file: pkg.types, format: "es", sourcemap: true },
     plugins: [dts()]
   }
 ]);

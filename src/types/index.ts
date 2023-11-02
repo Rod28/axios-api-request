@@ -66,3 +66,5 @@ export interface CustomResponseType<T = any, D = any> {
   config?: InternalAxiosRequestConfig<D>;
   request?: any;
 }
+
+export default AxiosApiRequestType;

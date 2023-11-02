@@ -1,15 +1,15 @@
 {
   "name": "axios-api-request",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An axios handler that helps facilitate requests to endpoints",
   "author": {
     "name": "Rodrigo GS",
     "email": "r.garez28@gmail.com"
   },
   "license": "ISC",
-  "main": "dist/index.js",
-  "browser": "dist/index.js",
-  "types": "dist/declarations/index.d.ts",
+  "main": "dist/cjs/index.cjs.js",
+  "module": "dist/es/index.es.js",
+  "types": "dist/index.d.ts",
   "homepage": "https://github.com/Rod28/axios-api-request",
   "repository": {
     "type": "git",
