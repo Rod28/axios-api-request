@@ -1,0 +1,32 @@
+# Source code
+src/
+
+# Tests
+coverage/
+tests/
+__mocks__/
+
+# Git
+.githooks/
+.gitignore
+
+# Npm
+.npmignore
+.npmrc
+
+# Lints
+.eslintrc.js
+.prettierignore
+.prettierrc.js
+
+# Jest
+jest.config.js
+jest.config.ts
+
+# Rollup
+rollup.config.js
+rollup.config.mjs
+rollup.config.cjs
+
+# Typescript
+tsconfig.json
